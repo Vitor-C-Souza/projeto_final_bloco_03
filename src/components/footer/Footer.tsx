@@ -9,7 +9,7 @@ function Footer() {
     <footer className="flex flex-row w-full justify-center text-white ">
       <div className="container flex flex-row-reverse justify-between items-center py-4 pl-60">
         <p className="text-xl font-bold">
-          Blog Pessoal Vítor Cavalcante Souza | Copyright: 2025
+          Farmacia Vítor Cavalcante Souza | Copyright: 2025
         </p>
         <div className="flex flex-col gap-1 items-center ">
           <p className="text-lg">Acesse nossas redes sociais</p>

@@ -1,4 +1,4 @@
-import React from "react";
+import ListarCategoria from "../../components/categoria/listarcategoria/ListarCategoria";
 
 function Home() {
   return (
@@ -30,6 +30,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <ListarCategoria />
     </>
   );
 }
