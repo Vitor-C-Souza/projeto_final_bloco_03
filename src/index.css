@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-800;
+}
+
+li {
+  @apply hover:text-purple-300 transition-colors transition-transform hover:underline underline-offset-2 hover:scale-110;
+}
+
+button {
+  @apply transition-transform hover:scale-105 m-0 p-0 rounded-full;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-800 rounded-lg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-600 rounded-lg border-2 border-slate-800;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400;
+}
+
+form,
+label,
+input {
+  @apply bg-white;
+}
+
+input,
+select {
+  @apply p-2 w-full px-3 pb-2 text-sm text-gray-900 bg-white border-2 border-gray-300 rounded-full 
+      focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500;
+}
+
+input:focus {
+  @apply outline-none border-indigo-500;
+}
+
+label {
+  @apply absolute text-gray-500 text-sm left-4 top-1/2 transform -translate-y-1/2 bg-white px-2 transition-all duration-300;
+
+  @apply peer-placeholder-shown:top-1/2 peer-placeholder-shown:left-4 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:transform peer-placeholder-shown:-translate-y-1/2;
+
+  @apply peer-valid:-top-1 peer-valid:left-4 peer-valid:text-xs peer-valid:transform peer-valid:-translate-y-4 peer-focus:-top-1 peer-focus:left-4 peer-focus:text-xs peer-focus:text-gray-900 peer-focus:transform peer-focus:-translate-y-4;
+}
